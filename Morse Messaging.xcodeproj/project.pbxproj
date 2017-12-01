@@ -14,6 +14,8 @@
 		AF47D44C1FCF71C5003C242C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF47D44A1FCF71C5003C242C /* LaunchScreen.storyboard */; };
 		AF47D4571FCF71C5003C242C /* Morse_MessagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4561FCF71C5003C242C /* Morse_MessagingTests.swift */; };
 		AF47D4621FCF71C5003C242C /* Morse_MessagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4611FCF71C5003C242C /* Morse_MessagingUITests.swift */; };
+		AF47D4861FCF980E003C242C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4851FCF980E003C242C /* KeyboardViewController.swift */; };
+		AF47D48A1FCF980E003C242C /* Morse Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF47D4831FCF980E003C242C /* Morse Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,28 @@
 			remoteGlobalIDString = AF47D43D1FCF71C5003C242C;
 			remoteInfo = "Morse Messaging";
 		};
+		AF47D4881FCF980E003C242C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF47D4361FCF71C4003C242C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF47D4821FCF980E003C242C;
+			remoteInfo = "Morse Keyboard";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF47D47E1FCF9779003C242C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AF47D48A1FCF980E003C242C /* Morse Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AF47D43E1FCF71C5003C242C /* Morse Messaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morse Messaging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +70,9 @@
 		AF47D45D1FCF71C5003C242C /* Morse MessagingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morse MessagingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47D4611FCF71C5003C242C /* Morse_MessagingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morse_MessagingUITests.swift; sourceTree = "<group>"; };
 		AF47D4631FCF71C5003C242C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF47D4831FCF980E003C242C /* Morse Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Morse Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF47D4851FCF980E003C242C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		AF47D4871FCF980E003C242C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF47D4801FCF980E003C242C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +113,7 @@
 				AF47D4401FCF71C5003C242C /* Morse Messaging */,
 				AF47D4551FCF71C5003C242C /* Morse MessagingTests */,
 				AF47D4601FCF71C5003C242C /* Morse MessagingUITests */,
+				AF47D4841FCF980E003C242C /* Morse Keyboard */,
 				AF47D43F1FCF71C5003C242C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +124,7 @@
 				AF47D43E1FCF71C5003C242C /* Morse Messaging.app */,
 				AF47D4521FCF71C5003C242C /* Morse MessagingTests.xctest */,
 				AF47D45D1FCF71C5003C242C /* Morse MessagingUITests.xctest */,
+				AF47D4831FCF980E003C242C /* Morse Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +160,15 @@
 			path = "Morse MessagingUITests";
 			sourceTree = "<group>";
 		};
+		AF47D4841FCF980E003C242C /* Morse Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AF47D4851FCF980E003C242C /* KeyboardViewController.swift */,
+				AF47D4871FCF980E003C242C /* Info.plist */,
+			);
+			path = "Morse Keyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +179,12 @@
 				AF47D43A1FCF71C5003C242C /* Sources */,
 				AF47D43B1FCF71C5003C242C /* Frameworks */,
 				AF47D43C1FCF71C5003C242C /* Resources */,
+				AF47D47E1FCF9779003C242C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AF47D4891FCF980E003C242C /* PBXTargetDependency */,
 			);
 			name = "Morse Messaging";
 			productName = "Morse Messaging";
@@ -181,6 +227,23 @@
 			productReference = AF47D45D1FCF71C5003C242C /* Morse MessagingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AF47D4821FCF980E003C242C /* Morse Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF47D48B1FCF980E003C242C /* Build configuration list for PBXNativeTarget "Morse Keyboard" */;
+			buildPhases = (
+				AF47D47F1FCF980E003C242C /* Sources */,
+				AF47D4801FCF980E003C242C /* Frameworks */,
+				AF47D4811FCF980E003C242C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Morse Keyboard";
+			productName = "Morse Keyboard";
+			productReference = AF47D4831FCF980E003C242C /* Morse Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +268,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = AF47D43D1FCF71C5003C242C;
 					};
+					AF47D4821FCF980E003C242C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = AF47D4391FCF71C4003C242C /* Build configuration list for PBXProject "Morse Messaging" */;
@@ -223,6 +290,7 @@
 				AF47D43D1FCF71C5003C242C /* Morse Messaging */,
 				AF47D4511FCF71C5003C242C /* Morse MessagingTests */,
 				AF47D45C1FCF71C5003C242C /* Morse MessagingUITests */,
+				AF47D4821FCF980E003C242C /* Morse Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +314,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AF47D45B1FCF71C5003C242C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF47D4811FCF980E003C242C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +355,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF47D47F1FCF980E003C242C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF47D4861FCF980E003C242C /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +375,11 @@
 			isa = PBXTargetDependency;
 			target = AF47D43D1FCF71C5003C242C /* Morse Messaging */;
 			targetProxy = AF47D45E1FCF71C5003C242C /* PBXContainerItemProxy */;
+		};
+		AF47D4891FCF980E003C242C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF47D4821FCF980E003C242C /* Morse Keyboard */;
+			targetProxy = AF47D4881FCF980E003C242C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,6 +513,7 @@
 		AF47D4671FCF71C5003C242C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KA739225F5;
@@ -440,6 +529,7 @@
 		AF47D4681FCF71C5003C242C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KA739225F5;
@@ -518,6 +608,36 @@
 			};
 			name = Release;
 		};
+		AF47D48C1FCF980E003C242C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KA739225F5;
+				INFOPLIST_FILE = "Morse Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ofo.Morse-Messaging.Morse-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF47D48D1FCF980E003C242C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KA739225F5;
+				INFOPLIST_FILE = "Morse Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ofo.Morse-Messaging.Morse-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +673,15 @@
 			buildConfigurations = (
 				AF47D46D1FCF71C5003C242C /* Debug */,
 				AF47D46E1FCF71C5003C242C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF47D48B1FCF980E003C242C /* Build configuration list for PBXNativeTarget "Morse Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF47D48C1FCF980E003C242C /* Debug */,
+				AF47D48D1FCF980E003C242C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
