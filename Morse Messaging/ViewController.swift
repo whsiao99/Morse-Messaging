@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var typeField: UITextField!
+    @IBOutlet weak var textField: UILabel!
+    @IBOutlet weak var morseInput: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textField.text = ""
+        morseInput.text = ""
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -23,7 +26,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func dotPressed(_ sender: UIButton) {
-        typeField.text?.append(".")
     }
     
     @IBAction func dashPressed(_ sender: UIButton) {
@@ -39,3 +41,7 @@ class ViewController: UIViewController {
     }
     
 }
+
+
+// Failing to input a character 3 times will cause correct morse combination to be shown
+
