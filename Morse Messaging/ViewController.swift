@@ -9,31 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var textField: UILabel!
     @IBOutlet weak var morseInput: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.text = ""
         morseInput.text = ""
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func dotPressed(_ sender: UIButton) {
+        morseInput.text = morseInput.text! + ".";
     }
     
     @IBAction func dashPressed(_ sender: UIButton) {
+        morseInput.text = morseInput.text! + "-";
     }
     
     @IBAction func backspacePressed(_ sender: UIButton) {
         // Delete last . or - entered when last button was not end char
         // Else delete last char
+        if morseInput.text?.isEmpty==false{
+            morseInput.text?.remove(at:(morseInput.text?.index(before: (morseInput.text?.endIndex)!))!)
+        }
     }
     
     @IBAction func endCharPressed(_ sender: UIButton) {
@@ -44,4 +48,3 @@ class ViewController: UIViewController {
 
 
 // Failing to input a character 3 times will cause correct morse combination to be shown
-
