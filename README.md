@@ -23,3 +23,8 @@ Practice View Code
 • Link "database" of words to use in application
   - We can start by just using all the letters and numbers, and the words "Hello" and "World" to make phrase "Hello World"
 • Write morse to text and/or text to morse translation code after logic is solved
+
+Menu View Code?
+• Animation?
+• Import image assets to use as buttons
+• Will will send some images to fb messenger
