@@ -10,21 +10,21 @@ User Interface - Darcy
 • Display panel
 • etc. (Possible menu interface as initialView? Could practice basic geometrical animation with this.)
 
-Logic
-• Decide how we want to distinguish different letter entries
-  - Time threshold
-    - Pros: User will eventually become familiarized with standard morse code timings
-    - Cons: User may often hesitate between inputs, resulting in many mistakes
-  - System determines all possible letter combinations of entered morse sequence
-    - Pros: We get to practice using Dictionary APIs and create algorithms and whatnot
-    - Cons: Difficult to implement, slower calculation
+Logic - Christopher
+• What happens when we press "return/send/nextChar"
+  - Write a function that has input string consisting of -s and .s and return corresponding char as the function's output
+• How do we implement spaces when we want to implement phrases?
 
-Practice View Code
+Practice View Code - Jerry
 • Link "database" of words to use in application
   - We can start by just using all the letters and numbers, and the words "Hello" and "World" to make phrase "Hello World"
 • Write morse to text and/or text to morse translation code after logic is solved
 
-Menu View Code?
+Menu View Code - William
 • Animation?
-• Import image assets to use as buttons
-• Will will send some images to fb messenger
+• Import image assets to use as buttons (Circles with text inside)
+• Click on circle and more circles pop up as options... (Enlarge with anchor)
+
+
+Other ideas to implement:
+•
