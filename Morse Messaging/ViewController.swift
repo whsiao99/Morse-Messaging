@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBAction func backspacePressed(_ sender: UIButton) {
         // Delete last . or - entered when last button was not end char
         // Else delete last char
-        if morseInput.text?.isEmpty==false{
+        if !(morseInput.text?.isEmpty)! {
             morseInput.text?.remove(at:(morseInput.text?.index(before: (morseInput.text?.endIndex)!))!)
         }
     }
