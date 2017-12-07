@@ -16,6 +16,10 @@
 		AF47D4621FCF71C5003C242C /* Morse_MessagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4611FCF71C5003C242C /* Morse_MessagingUITests.swift */; };
 		AF47D4861FCF980E003C242C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4851FCF980E003C242C /* KeyboardViewController.swift */; };
 		AF47D48A1FCF980E003C242C /* Morse Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF47D4831FCF980E003C242C /* Morse Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */; };
+		AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D31FD8BEFB009DC763 /* WordButton.png */; };
+		AFC027D71FD8BEFB009DC763 /* LetterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D41FD8BEFB009DC763 /* LetterButton.png */; };
+		AFC027D81FD8BEFB009DC763 /* PhraseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D51FD8BEFB009DC763 /* PhraseButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		AF47D4831FCF980E003C242C /* Morse Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Morse Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47D4851FCF980E003C242C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		AF47D4871FCF980E003C242C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSelectionViewController.swift; sourceTree = "<group>"; };
+		AFC027D31FD8BEFB009DC763 /* WordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordButton.png; sourceTree = "<group>"; };
+		AFC027D41FD8BEFB009DC763 /* LetterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LetterButton.png; sourceTree = "<group>"; };
+		AFC027D51FD8BEFB009DC763 /* PhraseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhraseButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +142,11 @@
 			children = (
 				AF47D4411FCF71C5003C242C /* AppDelegate.swift */,
 				AF47D4431FCF71C5003C242C /* ViewController.swift */,
+				AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */,
 				AF47D4451FCF71C5003C242C /* Main.storyboard */,
+				AFC027D41FD8BEFB009DC763 /* LetterButton.png */,
+				AFC027D51FD8BEFB009DC763 /* PhraseButton.png */,
+				AFC027D31FD8BEFB009DC763 /* WordButton.png */,
 				AF47D4481FCF71C5003C242C /* Assets.xcassets */,
 				AF47D44A1FCF71C5003C242C /* LaunchScreen.storyboard */,
 				AF47D44D1FCF71C5003C242C /* Info.plist */,
@@ -300,9 +312,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC027D81FD8BEFB009DC763 /* PhraseButton.png in Resources */,
 				AF47D44C1FCF71C5003C242C /* LaunchScreen.storyboard in Resources */,
+				AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */,
 				AF47D4491FCF71C5003C242C /* Assets.xcassets in Resources */,
 				AF47D4471FCF71C5003C242C /* Main.storyboard in Resources */,
+				AFC027D71FD8BEFB009DC763 /* LetterButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF47D4441FCF71C5003C242C /* ViewController.swift in Sources */,
+				AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */,
 				AF47D4421FCF71C5003C242C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

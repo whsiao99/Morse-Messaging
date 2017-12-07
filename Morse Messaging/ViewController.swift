@@ -41,125 +41,89 @@ class ViewController: UIViewController {
     }
     
     @IBAction func endCharPressed(_ sender: UIButton) {
-        // Take stored . and dash combination and translate to a character
+        // translates morse to char, now we need it to interact with something else...
+        // morseToChar(morseString: morseInput.text!)
     }
-    //Convert Moorse code to english characters:
-    /*func morseToChar(morse: String) -> String {
-        var engChar=""
-        if morse==".--"{
-            engChar="A"
-        }
-        else if morse=="-..."{
-            engChar="B"
-        }
-        else if morse=="-.-."{
-            engChar="C"
-        }
-        else if morse=="-.."{
-            engChar="D"
-        }
-        else if morse=="."{
-            engChar="E"
-        }
-        else if morse=="..-."{
-            engChar="F"
-        }
-        else if morse=="--."{
-            engChar="G"
-        }
-        else if morse=="...."{
-            engChar="H"
-        }
-        else if morse==".."{
-            engChar="I"
-        }
-        else if morse==".---"{
-            engChar="J"
-        }
-        else if morse=="-.-"{
-            engChar="K"
-        }
-        else if morse==".-.."{
-            engChar="L"
-        }
-        else if morse=="--"{
-            engChar="M"
-        }
-        else if morse=="-."{
-            engChar="N"
-        }
-        else if morse=="---"{
-            engChar="O"
-        }
-        else if morse==".--."{
-            engChar="P"
-        }
-        else if morse=="--.-"{
-            engChar="Q"
-        }
-        else if morse==".-."{
-            engChar="R"
-        }
-        else if morse=="..."{
-            engChar="S"
-        }
-        else if morse=="-"{
-            engChar="G"
-        }
-        else if morse=="..-"{
-            engChar="U"
-        }
-        else if morse=="...-"{
-            engChar="V"
-        }
-        else if morse==".--"{
-            engChar="W"
-        }
-        else if morse=="-..-"{
-            engChar="X"
-        }
-        else if morse=="-.--"{
-            engChar="Y"
-        }
-        else if morse=="--.."{
-            engChar="Z"
-        }
-        else if morse==".----"{
-            engChar="1"
-        }
-        else if morse=="..---"{
-            engChar="2"
-        }
-        else if morse=="...--"{
-            engChar="3"
-        }
-        else if morse=="....-"{
-            engChar="4"
-        }
-        else if morse=="....."{
-            engChar="5"
-        }
-        else if morse=="-...."{
-            engChar="6"
-        }
-        else if morse=="--..."{
-            engChar="7"
-        }
-        else if morse=="---.."{
-            engChar="8"
-        }
-        else if morse=="----."{
-            engChar="9"
-        }
-        else if morse=="-----"{
-            engChar="0"
-        }
-        else {
-            //Give user alert that what they entered is not a number or character
-        }
-        return engChar;
-    }*/
     
+    //Convert Moorse code to english characters:
+    func morseToChar(morseString: String) -> String {
+        if morseString==".--" {
+            return "A"
+        } else if morseString=="-..." {
+            return "B"
+        } else if morseString=="-.-." {
+            return "C"
+        } else if morseString=="-.." {
+            return "D"
+        } else if morseString=="." {
+            return "E"
+        } else if morseString=="..-." {
+            return "F"
+        } else if morseString=="--." {
+            return "G"
+        } else if morseString=="...." {
+            return "H"
+        } else if morseString==".." {
+            return "I"
+        } else if morseString==".---" {
+            return "J"
+        } else if morseString=="-.-" {
+            return "K"
+        } else if morseString==".-.." {
+            return "L"
+        } else if morseString=="--" {
+            return "M"
+        } else if morseString=="-." {
+            return "N"
+        } else if morseString=="---" {
+            return "O"
+        } else if morseString==".--." {
+            return "P"
+        } else if morseString=="--.-" {
+            return "Q"
+        } else if morseString==".-." {
+            return "R"
+        } else if morseString=="..." {
+            return "S"
+        } else if morseString=="-" {
+            return "G"
+        } else if morseString=="..-" {
+            return "U"
+        } else if morseString=="...-" {
+            return "V"
+        } else if morseString==".--" {
+            return "W"
+        } else if morseString=="-..-" {
+            return "X"
+        } else if morseString=="-.--" {
+            return "Y"
+        } else if morseString=="--.." {
+            return "Z"
+        } else if morseString==".----" {
+            return "1"
+        } else if morseString=="..---" {
+            return "2"
+        } else if morseString=="...--" {
+            return "3"
+        } else if morseString=="....-" {
+            return "4"
+        } else if morseString=="....." {
+            return "5"
+        } else if morseString=="-...." {
+            return "6"
+        } else if morseString=="--..." {
+            return "7"
+        } else if morseString=="---.." {
+            return "8"
+        } else if morseString=="----." {
+            return "9"
+        } else if morseString=="-----" {
+            return "0"
+        } else {
+            return ""
+            // we can test outside of this function for empty returns
+        }
+    }
 }
 
 
