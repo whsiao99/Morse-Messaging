@@ -86,7 +86,7 @@ class ViewController: UIViewController {
         } else if morseString=="..." {
             return "S"
         } else if morseString=="-" {
-            return "G"
+            return "T"
         } else if morseString=="..-" {
             return "U"
         } else if morseString=="...-" {
