@@ -124,7 +124,121 @@ class ViewController: UIViewController {
             // we can test outside of this function for empty returns
         }
     }
+    func charToMorse(eng: String) -> String {
+        if eng=="A"{
+            morse=".--"
+        }
+        else if eng=="B"{
+            return "-..."
+        }
+        else if eng=="C"{
+            return "-.-."
+        }
+        else if eng=="D"{
+            return "-.."
+        }
+        else if eng=="E"{
+            return "."
+        }
+        else if eng=="F"{
+            return "..-."
+        }
+        else if eng=="G"{
+            return "--."
+        }
+        else if eng=="H"{
+            return "...."
+        }
+        else if eng=="I"{
+            return ".."
+        }
+        else if eng=="J"{
+            return ".---"
+        }
+        else if eng=="K"{
+            return "-.-"
+        }
+        else if eng=="L"{
+            return ".-.."
+        }
+        else if eng=="M"{
+            return "--"
+        }
+        else if eng=="N"{
+            return "-."
+        }
+        else if eng=="O"{
+            return "---"
+        }
+        else if eng=="P"{
+            return ".--."
+        }
+        else if eng=="Q"{
+            return "--.-"
+        }
+        else if eng=="R"{
+            return ".-."
+        }
+        else if eng=="S"{
+            return "..."
+        }
+        else if eng=="T"{
+            return "-"
+        }
+        else if eng=="U"{
+            return "..-"
+        }
+        else if eng=="V"{
+            return "...-"
+        }
+        else if eng=="W"{
+            return ".--"
+        }
+        else if eng=="X"{
+            return "-..-"
+        }
+        else if eng=="Y"{
+            return "-.--"
+        }
+        else if eng=="Z"{
+            return "--.."
+        }
+        else if eng=="1"{
+            return ".----"
+        }
+        else if eng=="2"{
+            return "..---"
+        }
+        else if eng=="3"{
+            return "...--"
+        }
+        else if eng=="4"{
+            return "....-"
+        }
+        else if eng=="5"{
+            return "....."
+        }
+        else if eng=="6"{
+            return "-...."
+        }
+        else if eng=="7"{
+            return "--..."
+        }
+        else if eng=="8"{
+            return "---.."
+        }
+        else if eng=="9"{
+            return "----."
+        }
+        else if eng=="0"{
+            return "-----"
+        }
+        else {
+            return ""
+        }
+    }
 }
+
 
 
 // Failing to input a character 3 times will cause correct morse combination to be shown
