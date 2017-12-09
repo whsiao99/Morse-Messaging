@@ -31,7 +31,6 @@ class ExerciseSelectionViewController: UIViewController {
     @IBOutlet var phraseMorseButton: UIButton!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -42,11 +41,21 @@ class ExerciseSelectionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
+    }
+    
     @IBAction func letterButtonPressed(_ sender: UIButton) {
-        UIView.animate(withDuration: 1.0, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.wordButton.alpha = 1 - self.wordButton.alpha
         }, completion: nil)
-        UIView.animate(withDuration: 1.0, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.phraseButton.alpha = 1 - self.phraseButton.alpha
         }, completion: nil)
         wordButton.isUserInteractionEnabled = !wordButton.isUserInteractionEnabled
@@ -54,11 +63,25 @@ class ExerciseSelectionViewController: UIViewController {
     }
     
     @IBAction func wordButtonPressed(_ sender: UIButton) {
-        
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.letterButton.alpha = 1 - self.letterButton.alpha
+        }, completion: nil)
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.phraseButton.alpha = 1 - self.phraseButton.alpha
+        }, completion: nil)
+        letterButton.isUserInteractionEnabled = !letterButton.isUserInteractionEnabled
+        phraseButton.isUserInteractionEnabled = !phraseButton.isUserInteractionEnabled
     }
     
     @IBAction func phraseButtonPressed(_ sender: UIButton) {
-        
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.letterButton.alpha = 1 - self.letterButton.alpha
+        }, completion: nil)
+        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.wordButton.alpha = 1 - self.wordButton.alpha
+        }, completion: nil)
+        letterButton.isUserInteractionEnabled = !letterButton.isUserInteractionEnabled
+        wordButton.isUserInteractionEnabled = !wordButton.isUserInteractionEnabled
     }
     
     func toggleEnabled(button: UIButton) {
