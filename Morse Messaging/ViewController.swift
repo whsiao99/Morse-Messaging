@@ -75,10 +75,15 @@ class ViewController: UIViewController {
             error.text = "Invalid Input"
             error.textColor = UIColor.red
         } else if morseToChar(morseString: morseInput.text!)==textField.text {
-            textField.textColor = UIColor.green
+            UIView.animate(withDuration: 2.0, delay: 0.0, options:UIViewAnimationOptions.curveEaseIn, animations: {
+                self.textField.textColor = UIColor.green
+            }, completion: { _ in
+                self.textField.textColor = UIColor.black
+            })
         } else {
             textField.textColor = UIColor.red
         }
+        
     }
     
 
