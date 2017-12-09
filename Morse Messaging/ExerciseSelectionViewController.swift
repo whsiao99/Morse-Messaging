@@ -10,7 +10,12 @@ import UIKit
 
 class ExerciseSelectionViewController: UIViewController {
 
+    @IBOutlet var letterButton: UIButton!
+    @IBOutlet var wordButton: UIButton!
+    @IBOutlet var phraseButton: UIButton!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
