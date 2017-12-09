@@ -81,6 +81,7 @@
 		AFB610A21FDB955200389C6F /* libLexicontext.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLexicontext.a; sourceTree = "<group>"; };
 		AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LexicontextAssets.bundle; sourceTree = "<group>"; };
 		AFB610A41FDB955300389C6F /* Lexicontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lexicontext.h; sourceTree = "<group>"; };
+		AFB610AC1FDB9C7600389C6F /* libLexicontext.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLexicontext.a; path = "../../../Downloads/lexicontext-1.2-trial/libLexicontext.a"; sourceTree = "<group>"; };
 		AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSelectionViewController.swift; sourceTree = "<group>"; };
 		AFC027D31FD8BEFB009DC763 /* WordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordButton.png; sourceTree = "<group>"; };
 		AFC027D41FD8BEFB009DC763 /* LetterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LetterButton.png; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 				AF47D4601FCF71C5003C242C /* Morse MessagingUITests */,
 				AF47D4841FCF980E003C242C /* Morse Keyboard */,
 				AF47D43F1FCF71C5003C242C /* Products */,
+				AFB610AB1FDB9C7600389C6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +212,14 @@
 				AFB610A21FDB955200389C6F /* libLexicontext.a */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFB610AB1FDB9C7600389C6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFB610AC1FDB9C7600389C6F /* libLexicontext.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,6 +580,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Morse\\ Messaging",
+					"$(PROJECT_DIR)/Morse\\ Messaging/Frameworks",
+					"$(PROJECT_DIR)/Morse\\ Messaging/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ofo.Morse-Messaging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -590,6 +602,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Morse\\ Messaging",
+					"$(PROJECT_DIR)/Morse\\ Messaging/Frameworks",
+					"$(PROJECT_DIR)/Morse\\ Messaging/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ofo.Morse-Messaging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
