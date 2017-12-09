@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        morseInput.sizeToFit()
+        morseInput.textAlignment = NSTextAlignment.center
         morseInput.text = ""
         // Do any additional setup after loading the view, typically from a nib.
     }
