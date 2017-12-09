@@ -16,6 +16,8 @@
 		AF47D4621FCF71C5003C242C /* Morse_MessagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4611FCF71C5003C242C /* Morse_MessagingUITests.swift */; };
 		AF47D4861FCF980E003C242C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4851FCF980E003C242C /* KeyboardViewController.swift */; };
 		AF47D48A1FCF980E003C242C /* Morse Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF47D4831FCF980E003C242C /* Morse Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFB610A51FDB955300389C6F /* libLexicontext.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB610A21FDB955200389C6F /* libLexicontext.a */; };
+		AFB610A61FDB955300389C6F /* LexicontextAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */; };
 		AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */; };
 		AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D31FD8BEFB009DC763 /* WordButton.png */; };
 		AFC027D71FD8BEFB009DC763 /* LetterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D41FD8BEFB009DC763 /* LetterButton.png */; };
@@ -77,6 +79,9 @@
 		AF47D4831FCF980E003C242C /* Morse Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Morse Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47D4851FCF980E003C242C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		AF47D4871FCF980E003C242C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB610A21FDB955200389C6F /* libLexicontext.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLexicontext.a; sourceTree = "<group>"; };
+		AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LexicontextAssets.bundle; sourceTree = "<group>"; };
+		AFB610A41FDB955300389C6F /* Lexicontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lexicontext.h; sourceTree = "<group>"; };
 		AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSelectionViewController.swift; sourceTree = "<group>"; };
 		AFC027D31FD8BEFB009DC763 /* WordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordButton.png; sourceTree = "<group>"; };
 		AFC027D41FD8BEFB009DC763 /* LetterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LetterButton.png; sourceTree = "<group>"; };
@@ -88,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB610A51FDB955300389C6F /* libLexicontext.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,16 +146,16 @@
 		AF47D4401FCF71C5003C242C /* Morse Messaging */ = {
 			isa = PBXGroup;
 			children = (
-				AF47D4411FCF71C5003C242C /* AppDelegate.swift */,
-				AF47D4431FCF71C5003C242C /* ViewController.swift */,
-				AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */,
-				AF47D4451FCF71C5003C242C /* Main.storyboard */,
-				AFC027D41FD8BEFB009DC763 /* LetterButton.png */,
-				AFC027D51FD8BEFB009DC763 /* PhraseButton.png */,
-				AFC027D31FD8BEFB009DC763 /* WordButton.png */,
-				AF47D4481FCF71C5003C242C /* Assets.xcassets */,
-				AF47D44A1FCF71C5003C242C /* LaunchScreen.storyboard */,
 				AF47D44D1FCF71C5003C242C /* Info.plist */,
+				AF47D4411FCF71C5003C242C /* AppDelegate.swift */,
+				AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */,
+				AF47D4431FCF71C5003C242C /* ViewController.swift */,
+				AF47D4481FCF71C5003C242C /* Assets.xcassets */,
+				AFB610A71FDB95F600389C6F /* Classes */,
+				AFB610A91FDB962400389C6F /* Frameworks */,
+				AF47D44A1FCF71C5003C242C /* LaunchScreen.storyboard */,
+				AF47D4451FCF71C5003C242C /* Main.storyboard */,
+				AFB610A81FDB961500389C6F /* Resources */,
 			);
 			path = "Morse Messaging";
 			sourceTree = "<group>";
@@ -179,6 +185,33 @@
 				AF47D4871FCF980E003C242C /* Info.plist */,
 			);
 			path = "Morse Keyboard";
+			sourceTree = "<group>";
+		};
+		AFB610A71FDB95F600389C6F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AFB610A41FDB955300389C6F /* Lexicontext.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AFB610A81FDB961500389C6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFC027D41FD8BEFB009DC763 /* LetterButton.png */,
+				AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */,
+				AFC027D51FD8BEFB009DC763 /* PhraseButton.png */,
+				AFC027D31FD8BEFB009DC763 /* WordButton.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFB610A91FDB962400389C6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFB610A21FDB955200389C6F /* libLexicontext.a */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC027D81FD8BEFB009DC763 /* PhraseButton.png in Resources */,
+				AFB610A61FDB955300389C6F /* LexicontextAssets.bundle in Resources */,
 				AF47D44C1FCF71C5003C242C /* LaunchScreen.storyboard in Resources */,
 				AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */,
 				AF47D4491FCF71C5003C242C /* Assets.xcassets in Resources */,
@@ -535,6 +569,10 @@
 				DEVELOPMENT_TEAM = KA739225F5;
 				INFOPLIST_FILE = "Morse Messaging/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Morse\\ Messaging",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ofo.Morse-Messaging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -551,6 +589,10 @@
 				DEVELOPMENT_TEAM = KA739225F5;
 				INFOPLIST_FILE = "Morse Messaging/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Morse\\ Messaging",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ofo.Morse-Messaging";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
