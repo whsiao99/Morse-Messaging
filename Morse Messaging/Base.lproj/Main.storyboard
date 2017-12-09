@@ -92,33 +92,38 @@
             </objects>
             <point key="canvasLocation" x="-4" y="36.431784107946029"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercise Selection View Controller-->
         <scene sceneID="1gf-Xn-vod">
             <objects>
-                <viewController id="9U2-by-Hkp" sceneMemberID="viewController">
+                <viewController id="9U2-by-Hkp" customClass="ExerciseSelectionViewController" customModule="Morse_Messaging" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUc-Gn-gmg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhA-HL-0ZO">
-                                <rect key="frame" x="43" y="121" width="128" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tht-XE-Od7">
+                                <rect key="frame" x="123" y="105" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="PhraseButton.png"/>
+                                <state key="normal" title="Button" image="LetterButton.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oox-TL-zhl">
-                                <rect key="frame" x="199" y="121" width="128" height="128"/>
+                                <rect key="frame" x="123" y="269" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="WordButton.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tht-XE-Od7">
-                                <rect key="frame" x="123" y="250" width="128" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhA-HL-0ZO">
+                                <rect key="frame" x="123" y="433" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="LetterButton.png"/>
+                                <state key="normal" title="Button" image="PhraseButton.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="al2-t7-zLL"/>
                     </view>
+                    <connections>
+                        <outlet property="letterButton" destination="tht-XE-Od7" id="FaH-qe-omx"/>
+                        <outlet property="phraseButton" destination="MhA-HL-0ZO" id="iLx-UD-yD2"/>
+                        <outlet property="wordButton" destination="Oox-TL-zhl" id="66j-SL-26W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATk-dn-50K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
