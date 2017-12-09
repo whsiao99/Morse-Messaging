@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF17B6C41FDC895900ADBC6B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AF17B6C21FDC895800ADBC6B /* Icon.png */; };
+		AF17B6C51FDC895900ADBC6B /* MorseMessagingOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = AF17B6C31FDC895900ADBC6B /* MorseMessagingOpen.png */; };
 		AF47D4421FCF71C5003C242C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4411FCF71C5003C242C /* AppDelegate.swift */; };
 		AF47D4441FCF71C5003C242C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4431FCF71C5003C242C /* ViewController.swift */; };
 		AF47D4471FCF71C5003C242C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF47D4451FCF71C5003C242C /* Main.storyboard */; };
@@ -62,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF17B6C21FDC895800ADBC6B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../../../Downloads/Icon.png; sourceTree = "<group>"; };
+		AF17B6C31FDC895900ADBC6B /* MorseMessagingOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MorseMessagingOpen.png; path = ../../../../Downloads/MorseMessagingOpen.png; sourceTree = "<group>"; };
 		AF47D43E1FCF71C5003C242C /* Morse Messaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morse Messaging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47D4411FCF71C5003C242C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF47D4431FCF71C5003C242C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */,
 				AF47D4431FCF71C5003C242C /* ViewController.swift */,
 				AF47D4481FCF71C5003C242C /* Assets.xcassets */,
+				AF17B6C21FDC895800ADBC6B /* Icon.png */,
+				AF17B6C31FDC895900ADBC6B /* MorseMessagingOpen.png */,
 				AFB610A71FDB95F600389C6F /* Classes */,
 				AFB610A91FDB962400389C6F /* Frameworks */,
 				AF47D44A1FCF71C5003C242C /* LaunchScreen.storyboard */,
@@ -355,8 +361,10 @@
 			files = (
 				AFC027D81FD8BEFB009DC763 /* PhraseButton.png in Resources */,
 				AFB610A61FDB955300389C6F /* LexicontextAssets.bundle in Resources */,
+				AF17B6C51FDC895900ADBC6B /* MorseMessagingOpen.png in Resources */,
 				AF47D44C1FCF71C5003C242C /* LaunchScreen.storyboard in Resources */,
 				AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */,
+				AF17B6C41FDC895900ADBC6B /* Icon.png in Resources */,
 				AF47D4491FCF71C5003C242C /* Assets.xcassets in Resources */,
 				AF47D4471FCF71C5003C242C /* Main.storyboard in Resources */,
 				AFC027D71FD8BEFB009DC763 /* LetterButton.png in Resources */,
