@@ -16,7 +16,6 @@
 		AF47D4621FCF71C5003C242C /* Morse_MessagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4611FCF71C5003C242C /* Morse_MessagingUITests.swift */; };
 		AF47D4861FCF980E003C242C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4851FCF980E003C242C /* KeyboardViewController.swift */; };
 		AF47D48A1FCF980E003C242C /* Morse Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF47D4831FCF980E003C242C /* Morse Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AFB610A51FDB955300389C6F /* libLexicontext.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB610A21FDB955200389C6F /* libLexicontext.a */; };
 		AFB610A61FDB955300389C6F /* LexicontextAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */; };
 		AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */; };
 		AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D31FD8BEFB009DC763 /* WordButton.png */; };
@@ -93,7 +92,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFB610A51FDB955300389C6F /* libLexicontext.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,18 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var textField: UILabel!
     @IBOutlet weak var morseInput: UILabel!
     @IBOutlet weak var Error: UILabel!
+    
+    func randomChar() -> String{
+        let letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"]
+        let randomIndex = Int(arc4random_uniform(UInt32(letters.count)))
+        return letters[randomIndex]
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +27,7 @@ class ViewController: UIViewController {
         textField.text = ""
         Error.text=""
         // Do any additional setup after loading the view, typically from a nib.
+        textField.text = randomChar()
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,12 +68,15 @@ class ViewController: UIViewController {
         if morseToChar(morseString: morseInput.text!)==""{
             Error.text = "Invalid Input"
             Error.textColor = UIColor.red
-        } else{
-            Error.text = ""
-            textField.text = textField.text! + morseToChar(morseString: morseInput.text!)
-            morseInput.text = ""
+        } else if morseToChar(morseString: morseInput.text!)==textField.text {
+            textField.textColor = UIColor.green
+        } else {
+            textField.textColor = UIColor.red
         }
     }
+    
+
+    
     
     //Convert Moorse code to english characters:
     func morseToChar(morseString: String) -> String {
