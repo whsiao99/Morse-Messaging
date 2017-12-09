@@ -43,11 +43,14 @@ class ExerciseSelectionViewController: UIViewController {
     }
     
     @IBAction func letterButtonPressed(_ sender: UIButton) {
-        UIView.animate(withDuration: 1.0, delay: 0.0, animations: {
-            <#code#>
-        }
-        wordButton.isEnabled = !wordButton.isEnabled
-        phraseButton.isEnabled = !phraseButton.isEnabled
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.wordButton.alpha = 1 - self.wordButton.alpha
+        }, completion: nil)
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.phraseButton.alpha = 1 - self.phraseButton.alpha
+        }, completion: nil)
+        wordButton.isUserInteractionEnabled = !wordButton.isUserInteractionEnabled
+        phraseButton.isUserInteractionEnabled = !phraseButton.isUserInteractionEnabled
     }
     
     @IBAction func wordButtonPressed(_ sender: UIButton) {

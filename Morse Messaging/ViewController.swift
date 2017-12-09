@@ -12,15 +12,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textField: UILabel!
     @IBOutlet weak var morseInput: UILabel!
-    @IBOutlet weak var Error: UILabel!
+    @IBOutlet weak var error: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         morseInput.sizeToFit()
         morseInput.textAlignment = NSTextAlignment.center
+        
+        // Set our text fields to empty
         morseInput.text = ""
         textField.text = ""
-        Error.text = ""
+        error.text = ""
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -31,20 +34,20 @@ class ViewController: UIViewController {
     
    
     @IBAction func dotPressed(_ sender: UIButton) {
-        if (morseInput.text?.count)!<5{
+        if (morseInput.text?.count)! < 5{
             morseInput.text = morseInput.text! + ".";
-        }else{
-            Error.text = "maximum of 5 char"
-            Error.textColor = UIColor.purple
+        } else {
+            error.text = "maximum of 5 char"
+            error.textColor = UIColor.purple
         }
     }
     
     @IBAction func dashPressed(_ sender: UIButton) {
-        if (morseInput.text?.count)!<5{
+        if (morseInput.text?.count)! < 5 {
             morseInput.text = morseInput.text! + "-";
-        }else {
-            Error.text = "maximum of 5 char"
-            Error.textColor = UIColor.purple
+        } else {
+            error.text = "maximum of 5 char"
+            error.textColor = UIColor.purple
         }
     }
     
@@ -59,11 +62,11 @@ class ViewController: UIViewController {
     @IBAction func endCharPressed(_ sender: UIButton) {
         // translates morse to char, now we need it to interact with something else...
         // morseToChar(morseString: morseInput.text!)
-        if morseToChar(morseString: morseInput.text!)==""{
-            Error.text = "Invalid Input"
-            Error.textColor = UIColor.red
+        if morseToChar(morseString: morseInput.text!) == ""{
+            error.text = "Invalid Input"
+            error.textColor = UIColor.red
         } else{
-            Error.text = ""
+            error.text = ""
             textField.text = textField.text! + morseToChar(morseString: morseInput.text!)
             morseInput.text = ""
         }
@@ -71,77 +74,77 @@ class ViewController: UIViewController {
     
     //Convert Moorse code to english characters:
     func morseToChar(morseString: String) -> String {
-        if morseString==".--" {
+        if morseString == ".--" {
             return "A"
-        } else if morseString=="-..." {
+        } else if morseString == "-..." {
             return "B"
-        } else if morseString=="-.-." {
+        } else if morseString == "-.-." {
             return "C"
-        } else if morseString=="-.." {
+        } else if morseString == "-.." {
             return "D"
-        } else if morseString=="." {
+        } else if morseString == "." {
             return "E"
-        } else if morseString=="..-." {
+        } else if morseString == "..-." {
             return "F"
-        } else if morseString=="--." {
+        } else if morseString == "--." {
             return "G"
-        } else if morseString=="...." {
+        } else if morseString == "...." {
             return "H"
-        } else if morseString==".." {
+        } else if morseString == ".." {
             return "I"
-        } else if morseString==".---" {
+        } else if morseString == ".---" {
             return "J"
-        } else if morseString=="-.-" {
+        } else if morseString == "-.-" {
             return "K"
-        } else if morseString==".-.." {
+        } else if morseString == ".-.." {
             return "L"
-        } else if morseString=="--" {
+        } else if morseString == "--" {
             return "M"
-        } else if morseString=="-." {
+        } else if morseString == "-." {
             return "N"
-        } else if morseString=="---" {
+        } else if morseString == "---" {
             return "O"
-        } else if morseString==".--." {
+        } else if morseString == ".--." {
             return "P"
-        } else if morseString=="--.-" {
+        } else if morseString == "--.-" {
             return "Q"
-        } else if morseString==".-." {
+        } else if morseString == ".-." {
             return "R"
-        } else if morseString=="..." {
+        } else if morseString == "..." {
             return "S"
-        } else if morseString=="-" {
+        } else if morseString == "-" {
             return "T"
-        } else if morseString=="..-" {
+        } else if morseString == "..-" {
             return "U"
-        } else if morseString=="...-" {
+        } else if morseString == "...-" {
             return "V"
-        } else if morseString==".--" {
+        } else if morseString == ".--" {
             return "W"
-        } else if morseString=="-..-" {
+        } else if morseString == "-..-" {
             return "X"
-        } else if morseString=="-.--" {
+        } else if morseString == "-.--" {
             return "Y"
-        } else if morseString=="--.." {
+        } else if morseString == "--.." {
             return "Z"
-        } else if morseString==".----" {
+        } else if morseString == ".----" {
             return "1"
-        } else if morseString=="..---" {
+        } else if morseString == "..---" {
             return "2"
-        } else if morseString=="...--" {
+        } else if morseString == "...--" {
             return "3"
-        } else if morseString=="....-" {
+        } else if morseString == "....-" {
             return "4"
-        } else if morseString=="....." {
+        } else if morseString == "....." {
             return "5"
-        } else if morseString=="-...." {
+        } else if morseString == "-...." {
             return "6"
-        } else if morseString=="--..." {
+        } else if morseString == "--..." {
             return "7"
-        } else if morseString=="---.." {
+        } else if morseString == "---.." {
             return "8"
-        } else if morseString=="----." {
+        } else if morseString == "----." {
             return "9"
-        } else if morseString=="-----" {
+        } else if morseString == "-----" {
             return "0"
         } else {
             return ""
@@ -149,115 +152,79 @@ class ViewController: UIViewController {
         }
     }
     func charToMorse(eng: String) -> String {
-        if eng=="A" {
+        if eng == "A" {
             return ".--"
-        }
-        else if eng=="B"{
+        } else if eng == "B" {
             return "-..."
-        }
-        else if eng=="C"{
+        } else if eng == "C" {
             return "-.-."
-        }
-        else if eng=="D"{
+        } else if eng == "D" {
             return "-.."
-        }
-        else if eng=="E"{
+        } else if eng == "E" {
             return "."
-        }
-        else if eng=="F"{
+        } else if eng == "F" {
             return "..-."
-        }
-        else if eng=="G"{
+        } else if eng == "G" {
             return "--."
-        }
-        else if eng=="H"{
+        } else if eng == "H" {
             return "...."
-        }
-        else if eng=="I"{
+        } else if eng == "I" {
             return ".."
-        }
-        else if eng=="J"{
+        } else if eng == "J" {
             return ".---"
-        }
-        else if eng=="K"{
+        } else if eng == "K" {
             return "-.-"
-        }
-        else if eng=="L"{
+        } else if eng == "L" {
             return ".-.."
-        }
-        else if eng=="M"{
+        } else if eng == "M" {
             return "--"
-        }
-        else if eng=="N"{
+        } else if eng == "N" {
             return "-."
-        }
-        else if eng=="O"{
+        } else if eng == "O" {
             return "---"
-        }
-        else if eng=="P"{
+        } else if eng == "P" {
             return ".--."
-        }
-        else if eng=="Q"{
+        } else if eng == "Q" {
             return "--.-"
-        }
-        else if eng=="R"{
+        } else if eng == "R" {
             return ".-."
-        }
-        else if eng=="S"{
+        } else if eng == "S" {
             return "..."
-        }
-        else if eng=="T"{
+        } else if eng == "T" {
             return "-"
-        }
-        else if eng=="U"{
+        } else if eng == "U" {
             return "..-"
-        }
-        else if eng=="V"{
+        } else if eng == "V" {
             return "...-"
-        }
-        else if eng=="W"{
+        } else if eng == "W" {
             return ".--"
-        }
-        else if eng=="X"{
+        } else if eng == "X" {
             return "-..-"
-        }
-        else if eng=="Y"{
+        } else if eng == "Y" {
             return "-.--"
-        }
-        else if eng=="Z"{
+        } else if eng == "Z" {
             return "--.."
-        }
-        else if eng=="1"{
+        } else if eng == "1" {
             return ".----"
-        }
-        else if eng=="2"{
+        } else if eng == "2" {
             return "..---"
-        }
-        else if eng=="3"{
+        } else if eng == "3" {
             return "...--"
-        }
-        else if eng=="4"{
+        } else if eng == "4" {
             return "....-"
-        }
-        else if eng=="5"{
+        } else if eng == "5" {
             return "....."
-        }
-        else if eng=="6"{
+        } else if eng == "6" {
             return "-...."
-        }
-        else if eng=="7"{
+        } else if eng == "7" {
             return "--..."
-        }
-        else if eng=="8"{
+        } else if eng == "8" {
             return "---.."
-        }
-        else if eng=="9"{
+        } else if eng == "9" {
             return "----."
-        }
-        else if eng=="0"{
+        } else if eng == "0" {
             return "-----"
-        }
-        else {
+        } else {
             return ""
         }
     }
