@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         morseInput.textAlignment = NSTextAlignment.center
         morseInput.text = ""
         textField.text = ""
-        Error.text=""
+        Error.text = ""
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -149,7 +149,7 @@ class ViewController: UIViewController {
         }
     }
     func charToMorse(eng: String) -> String {
-        if eng=="A"{
+        if eng=="A" {
             return ".--"
         }
         else if eng=="B"{

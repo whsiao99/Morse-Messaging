@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9U2-by-Hkp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bodoni72.ttc">
+            <string>BodoniSvtyTwoITCTT-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -108,23 +114,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tht-XE-Od7">
-                                <rect key="frame" x="123" y="105" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morse Training" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf5-Ln-2li">
+                                <rect key="frame" x="85" y="52" width="206" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mf5-Ln-2li" secondAttribute="height" multiplier="375:71" id="EpJ-PN-ESC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tht-XE-Od7">
+                                <rect key="frame" x="123" y="126" width="129" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tht-XE-Od7" secondAttribute="height" multiplier="1:1" id="7j2-sU-azL"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="LetterButton.png"/>
+                                <connections>
+                                    <action selector="letterButtonPressed:" destination="9U2-by-Hkp" eventType="touchUpInside" id="rQr-Ke-FXO"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oox-TL-zhl">
-                                <rect key="frame" x="123" y="269" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oox-TL-zhl">
+                                <rect key="frame" x="123" y="291" width="129" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Oox-TL-zhl" secondAttribute="height" multiplier="1:1" id="dV5-5V-22N"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="WordButton.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhA-HL-0ZO">
-                                <rect key="frame" x="123" y="433" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhA-HL-0ZO">
+                                <rect key="frame" x="123" y="456" width="129" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MhA-HL-0ZO" secondAttribute="height" multiplier="1:1" id="Lph-gA-2ot"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="PhraseButton.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oox-TL-zhl" firstAttribute="top" secondItem="tht-XE-Od7" secondAttribute="bottom" constant="36" id="4gT-lz-NCN"/>
+                            <constraint firstItem="MhA-HL-0ZO" firstAttribute="top" secondItem="Oox-TL-zhl" secondAttribute="bottom" constant="36" id="Djj-4S-UYb"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="top" secondItem="mf5-Ln-2li" secondAttribute="bottom" constant="35" id="JIF-TQ-UGb"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="top" secondItem="VUc-Gn-gmg" secondAttribute="top" constant="126" id="VA2-mA-ALp"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="XWA-hr-bB3"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="trailing" secondItem="Oox-TL-zhl" secondAttribute="trailing" id="ZHw-QM-Mbb"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="leading" secondItem="Oox-TL-zhl" secondAttribute="leading" id="g3g-9n-57I"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="leading" secondItem="MhA-HL-0ZO" secondAttribute="leading" id="gXh-ay-HLO"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="leading" secondItem="al2-t7-zLL" secondAttribute="leading" constant="123" id="iUQ-6e-VZw"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="trailing" secondItem="MhA-HL-0ZO" secondAttribute="trailing" id="otB-tb-cU8"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="centerX" secondItem="mf5-Ln-2li" secondAttribute="centerX" id="pzS-9f-dMA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="al2-t7-zLL"/>
                     </view>
                     <connections>
