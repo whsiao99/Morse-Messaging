@@ -12,10 +12,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textField: UILabel!
     @IBOutlet weak var morseInput: UILabel!
+    @IBOutlet weak var Error: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         morseInput.text = ""
+        textField.text = ""
+        Error.text=""
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -24,12 +27,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+   
     @IBAction func dotPressed(_ sender: UIButton) {
-        morseInput.text = morseInput.text! + ".";
+        if (morseInput.text?.count)!<5{
+            morseInput.text = morseInput.text! + ".";
+        }else{
+            Error.text = "maximum of 5 char"
+            Error.textColor = UIColor.purple
+        }
     }
     
     @IBAction func dashPressed(_ sender: UIButton) {
-        morseInput.text = morseInput.text! + "-";
+        if (morseInput.text?.count)!<5{
+            morseInput.text = morseInput.text! + "-";
+        }else {
+            Error.text = "maximum of 5 char"
+            Error.textColor = UIColor.purple
+        }
     }
     
     @IBAction func backspacePressed(_ sender: UIButton) {
@@ -43,6 +57,14 @@ class ViewController: UIViewController {
     @IBAction func endCharPressed(_ sender: UIButton) {
         // translates morse to char, now we need it to interact with something else...
         // morseToChar(morseString: morseInput.text!)
+        if morseToChar(morseString: morseInput.text!)==""{
+            Error.text = "Invalid Input"
+            Error.textColor = UIColor.red
+        } else{
+            Error.text = ""
+            textField.text = textField.text! + morseToChar(morseString: morseInput.text!)
+            morseInput.text = ""
+        }
     }
     
     //Convert Moorse code to english characters:
@@ -126,7 +148,7 @@ class ViewController: UIViewController {
     }
     func charToMorse(eng: String) -> String {
         if eng=="A"{
-            morse=".--"
+            return ".--"
         }
         else if eng=="B"{
             return "-..."
