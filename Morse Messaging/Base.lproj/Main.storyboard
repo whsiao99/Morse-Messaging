@@ -139,7 +139,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tht-XE-Od7">
-                                <rect key="frame" x="142" y="120" width="130" height="130"/>
+                                <rect key="frame" x="142" y="125" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="7az-U1-JTU"/>
                                     <constraint firstAttribute="width" constant="130" id="pJj-YY-jJn"/>
@@ -150,7 +150,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oox-TL-zhl">
-                                <rect key="frame" x="142" y="330" width="130" height="130"/>
+                                <rect key="frame" x="142" y="335" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="stm-w1-JZT"/>
                                     <constraint firstAttribute="height" constant="130" id="uOF-NK-AE0"/>
@@ -161,7 +161,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhA-HL-0ZO">
-                                <rect key="frame" x="142" y="540" width="130" height="130"/>
+                                <rect key="frame" x="142" y="545" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="9OB-hT-UN3"/>
                                     <constraint firstAttribute="height" constant="130" id="UDI-t8-7BM"/>
@@ -295,7 +295,7 @@
                             <constraint firstItem="tht-XE-Od7" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="1jm-GU-PEI"/>
                             <constraint firstItem="xu2-ru-meY" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="6Zt-Rw-1Io"/>
                             <constraint firstItem="mf5-Ln-2li" firstAttribute="leading" secondItem="al2-t7-zLL" secondAttribute="leading" id="9H5-bw-Soi"/>
-                            <constraint firstItem="tht-XE-Od7" firstAttribute="top" secondItem="mf5-Ln-2li" secondAttribute="bottom" constant="40" id="AXZ-io-81Z"/>
+                            <constraint firstItem="tht-XE-Od7" firstAttribute="top" secondItem="mf5-Ln-2li" secondAttribute="bottom" constant="45" id="AXZ-io-81Z"/>
                             <constraint firstItem="MhA-HL-0ZO" firstAttribute="top" secondItem="Oox-TL-zhl" secondAttribute="bottom" constant="80" id="F6n-7W-vsC"/>
                             <constraint firstItem="l2J-uT-F4g" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="WNZ-XA-eon"/>
                             <constraint firstItem="al2-t7-zLL" firstAttribute="trailing" secondItem="mf5-Ln-2li" secondAttribute="trailing" id="gcM-2y-vTe"/>
