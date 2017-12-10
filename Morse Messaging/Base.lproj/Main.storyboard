@@ -171,45 +171,8 @@
                                     <action selector="phraseButtonPressed:" destination="9U2-by-Hkp" eventType="touchUpInside" id="iia-mm-nCS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu2-ru-meY" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
-                                <rect key="frame" x="146" y="278" width="123" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="  Multiple Choice  ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2J-uT-F4g" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
-                                <rect key="frame" x="146" y="278" width="123" height="30"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="  Multiple Choice  ">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjH-gW-tXF" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
-                                <rect key="frame" x="146" y="278" width="123" height="30"/>
-                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="  Multiple Choice  ">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obr-Y9-neD" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
-                                <rect key="frame" x="20" y="389" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obr-Y9-neD" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="145" y="465" width="124" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="  Matching Game  ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -220,9 +183,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDY-nw-DI3" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
-                                <rect key="frame" x="20" y="389" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDY-nw-DI3" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="145" y="465" width="124" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="  Matching Game  ">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -233,9 +195,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mb-sM-swD" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
-                                <rect key="frame" x="20" y="389" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mb-sM-swD" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="145" y="465" width="124" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="  Matching Game  ">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -246,9 +207,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqT-jL-5hP" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
-                                <rect key="frame" x="20" y="513" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqT-jL-5hP" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="145" y="585" width="124" height="30"/>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="  English - Morse  ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -258,10 +218,12 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="iLG-QS-RIP" kind="show" id="IxP-In-M17"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTL-xW-PBp" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
-                                <rect key="frame" x="20" y="513" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTL-xW-PBp" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="145" y="585" width="124" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="  English - Morse  ">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -271,10 +233,12 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="jRF-Cc-H19" kind="show" id="92v-St-ddq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-JV-cn0" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
-                                <rect key="frame" x="20" y="513" width="124" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-JV-cn0" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="145" y="585" width="124" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="  English - Morse  ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -288,6 +252,42 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="bc9-6d-wEj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu2-ru-meY" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="145.66666666666666" y="345" width="122.99999999999997" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="  Multiple Choice  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2J-uT-F4g" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="145.66666666666666" y="345" width="122.99999999999997" height="30"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="  Multiple Choice  ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjH-gW-tXF" customClass="RoundButton" customModule="Morse_Messaging" customModuleProvider="target">
+                                <rect key="frame" x="145.66666666666666" y="345" width="122.99999999999997" height="30"/>
+                                <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="  Multiple Choice  ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -295,14 +295,29 @@
                             <constraint firstItem="tht-XE-Od7" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="1jm-GU-PEI"/>
                             <constraint firstItem="xu2-ru-meY" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="6Zt-Rw-1Io"/>
                             <constraint firstItem="mf5-Ln-2li" firstAttribute="leading" secondItem="al2-t7-zLL" secondAttribute="leading" id="9H5-bw-Soi"/>
+                            <constraint firstItem="OjH-gW-tXF" firstAttribute="top" secondItem="tht-XE-Od7" secondAttribute="bottom" constant="90" id="9wW-Jo-xdS"/>
                             <constraint firstItem="tht-XE-Od7" firstAttribute="top" secondItem="mf5-Ln-2li" secondAttribute="bottom" constant="45" id="AXZ-io-81Z"/>
                             <constraint firstItem="MhA-HL-0ZO" firstAttribute="top" secondItem="Oox-TL-zhl" secondAttribute="bottom" constant="80" id="F6n-7W-vsC"/>
+                            <constraint firstItem="YTL-xW-PBp" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="Iaj-oQ-zWk"/>
+                            <constraint firstItem="tqT-jL-5hP" firstAttribute="top" secondItem="gDY-nw-DI3" secondAttribute="bottom" constant="90" id="J0Y-rX-7qy"/>
+                            <constraint firstItem="gDY-nw-DI3" firstAttribute="top" secondItem="l2J-uT-F4g" secondAttribute="bottom" constant="90" id="JR7-eU-Nqx"/>
+                            <constraint firstItem="gDY-nw-DI3" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="LZD-rV-1IW"/>
+                            <constraint firstItem="obr-Y9-neD" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="Lhy-53-eEU"/>
+                            <constraint firstItem="qxd-JV-cn0" firstAttribute="top" secondItem="7mb-sM-swD" secondAttribute="bottom" constant="90" id="SFR-Tz-EgZ"/>
                             <constraint firstItem="l2J-uT-F4g" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="WNZ-XA-eon"/>
+                            <constraint firstItem="qxd-JV-cn0" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="au8-yS-Lr0"/>
+                            <constraint firstItem="7mb-sM-swD" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="bQb-IU-zqd"/>
                             <constraint firstItem="al2-t7-zLL" firstAttribute="trailing" secondItem="mf5-Ln-2li" secondAttribute="trailing" id="gcM-2y-vTe"/>
                             <constraint firstItem="MhA-HL-0ZO" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="hQE-yr-YUI"/>
                             <constraint firstItem="Oox-TL-zhl" firstAttribute="top" secondItem="tht-XE-Od7" secondAttribute="bottom" constant="80" id="igh-rC-Q6g"/>
                             <constraint firstItem="Oox-TL-zhl" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="kk9-Un-1P7"/>
+                            <constraint firstItem="obr-Y9-neD" firstAttribute="top" secondItem="xu2-ru-meY" secondAttribute="bottom" constant="90" id="nQY-cr-JT6"/>
+                            <constraint firstItem="YTL-xW-PBp" firstAttribute="top" secondItem="gDY-nw-DI3" secondAttribute="bottom" constant="90" id="pDH-aO-2Vh"/>
                             <constraint firstItem="OjH-gW-tXF" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="sad-3t-2As"/>
+                            <constraint firstItem="7mb-sM-swD" firstAttribute="top" secondItem="OjH-gW-tXF" secondAttribute="bottom" constant="90" id="stW-xX-wEc"/>
+                            <constraint firstItem="xu2-ru-meY" firstAttribute="top" secondItem="tht-XE-Od7" secondAttribute="bottom" constant="90" id="vO3-mL-5c7"/>
+                            <constraint firstItem="l2J-uT-F4g" firstAttribute="top" secondItem="tht-XE-Od7" secondAttribute="bottom" constant="90" id="xuF-OX-9dQ"/>
+                            <constraint firstItem="tqT-jL-5hP" firstAttribute="centerX" secondItem="VUc-Gn-gmg" secondAttribute="centerX" id="y8k-as-zRU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="al2-t7-zLL"/>
                     </view>
