@@ -10,6 +10,8 @@ import UIKit
 
 class ExerciseSelectionViewController: UIViewController {
 
+    @IBOutlet var titleLabel: UILabel!
+    
     // Categories
     @IBOutlet var letterButton: UIButton!
     @IBOutlet var wordButton: UIButton!
@@ -20,18 +22,23 @@ class ExerciseSelectionViewController: UIViewController {
     @IBOutlet var wordMCButton: UIButton!
     @IBOutlet var phraseMCButton: UIButton!
     
-    //// Maybe we can do something like Quizlet's matching game? ////
+    // Maybe we can do something like Quizlet's matching game?
     @IBOutlet var letterMatchButton: UIButton!
     @IBOutlet var wordMatchButton: UIButton!
     @IBOutlet var phraseMatchButton: UIButton!
     
-    // Morse Typing Access
+    // Morse Typing Access 
     @IBOutlet var letterMorseButton: UIButton!
     @IBOutlet var wordMorseButton: UIButton!
     @IBOutlet var phraseMorseButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /* NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraintEqualToSystemSpacingBelow(view.safeAreaLayoutGuide.topAnchor, multiplier: 1.0),
+            titleLabel.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 1.0)
+            ]) */
         
         // Do any additional setup after loading the view.
     }
@@ -83,10 +90,7 @@ class ExerciseSelectionViewController: UIViewController {
         letterButton.isUserInteractionEnabled = !letterButton.isUserInteractionEnabled
         wordButton.isUserInteractionEnabled = !wordButton.isUserInteractionEnabled
     }
-    
-    func toggleEnabled(button: UIButton) {
-        button.isEnabled = !button.isEnabled
-    }
+
 
     /*
     // MARK: - Navigation

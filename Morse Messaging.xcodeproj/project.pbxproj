@@ -18,6 +18,7 @@
 		AF47D4621FCF71C5003C242C /* Morse_MessagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4611FCF71C5003C242C /* Morse_MessagingUITests.swift */; };
 		AF47D4861FCF980E003C242C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4851FCF980E003C242C /* KeyboardViewController.swift */; };
 		AF47D48A1FCF980E003C242C /* Morse Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF47D4831FCF980E003C242C /* Morse Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFA0901F1FDDCFC600B7959B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0901E1FDDCFC600B7959B /* RoundButton.swift */; };
 		AFB610A61FDB955300389C6F /* LexicontextAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */; };
 		AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */; };
 		AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D31FD8BEFB009DC763 /* WordButton.png */; };
@@ -82,6 +83,7 @@
 		AF47D4831FCF980E003C242C /* Morse Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Morse Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47D4851FCF980E003C242C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		AF47D4871FCF980E003C242C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA0901E1FDDCFC600B7959B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		AFB610A21FDB955200389C6F /* libLexicontext.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLexicontext.a; sourceTree = "<group>"; };
 		AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LexicontextAssets.bundle; sourceTree = "<group>"; };
 		AFB610A41FDB955300389C6F /* Lexicontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lexicontext.h; sourceTree = "<group>"; };
@@ -151,8 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				AF47D44D1FCF71C5003C242C /* Info.plist */,
-				AF17B6C61FDC8ADA00ADBC6B /* Icon.png */,
-				AF17B6C71FDC8ADA00ADBC6B /* MorseMessagingOpen.png */,
 				AF47D4411FCF71C5003C242C /* AppDelegate.swift */,
 				AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */,
 				AF47D4431FCF71C5003C242C /* ViewController.swift */,
@@ -197,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				AFB610A41FDB955300389C6F /* Lexicontext.h */,
+				AFA0901E1FDDCFC600B7959B /* RoundButton.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -204,8 +205,10 @@
 		AFB610A81FDB961500389C6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AFC027D41FD8BEFB009DC763 /* LetterButton.png */,
 				AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */,
+				AF17B6C61FDC8ADA00ADBC6B /* Icon.png */,
+				AFC027D41FD8BEFB009DC763 /* LetterButton.png */,
+				AF17B6C71FDC8ADA00ADBC6B /* MorseMessagingOpen.png */,
 				AFC027D51FD8BEFB009DC763 /* PhraseButton.png */,
 				AFC027D31FD8BEFB009DC763 /* WordButton.png */,
 			);
@@ -399,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA0901F1FDDCFC600B7959B /* RoundButton.swift in Sources */,
 				AF47D4441FCF71C5003C242C /* ViewController.swift in Sources */,
 				AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */,
 				AF47D4421FCF71C5003C242C /* AppDelegate.swift in Sources */,
