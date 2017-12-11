@@ -68,13 +68,25 @@ class ViewController: UIViewController {
             error.text = "Invalid Input"
             error.textColor = UIColor.red
         } else if morseToChar(morseString: morseInput.text!)==textField.text {
-            UIView.animate(withDuration: 2.0, delay: 0.0, options:UIViewAnimationOptions.curveEaseIn, animations: {
-                self.textField.textColor = UIColor.green
-            }, completion: { _ in
+            error.text = ""
+            self.textField.textColor = UIColor.green
+            self.error.textColor = UIColor.green
+            self.error.text = "Correct!"
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
                 self.textField.textColor = UIColor.black
-            })
+                self.textField.text = self.randomChar()
+                self.morseInput.text = ""
+                self.error.text = ""
+            }
         } else {
-            textField.textColor = UIColor.red
+            self.textField.textColor = UIColor.red
+            self.error.textColor = UIColor.red
+            self.error.text = "Incorrect Input"
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
+                self.error.text = ""
+                self.textField.textColor = UIColor.black
+
+            }
         }
         
     }
