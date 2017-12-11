@@ -15,6 +15,11 @@ class ExerciseSelectionViewController: UIViewController {
     @IBOutlet var wordButton: UIButton!
     @IBOutlet var phraseButton: UIButton!
     
+    // Category Button Positions
+    var letterButtonCenter: CGPoint!
+    var wordButtonCenter: CGPoint!
+    var phraseButtonCenter: CGPoint!
+    
     // Letter Exercises
     @IBOutlet var letterMCButton: UIButton!
     @IBOutlet var letterMatchButton: UIButton!
@@ -33,6 +38,7 @@ class ExerciseSelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // These buttons should not be initially visible
         letterMCButton.alpha = 0
         letterMatchButton.alpha = 0
         letterMorseButton.alpha = 0
@@ -43,10 +49,9 @@ class ExerciseSelectionViewController: UIViewController {
         phraseMatchButton.alpha = 0
         phraseMorseButton.alpha = 0
 
-        /* NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraintEqualToSystemSpacingBelow(view.safeAreaLayoutGuide.topAnchor, multiplier: 1.0),
-            titleLabel.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 1.0)
-            ]) */
+        letterButtonCenter = letterButton.center
+        wordButtonCenter = wordButton.center
+        phraseButtonCenter = phraseButton.center
         
         // Do any additional setup after loading the view.
     }
@@ -69,47 +74,48 @@ class ExerciseSelectionViewController: UIViewController {
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.wordButton.alpha = 1 - self.wordButton.alpha
-        }, completion: nil)
-        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.phraseButton.alpha = 1 - self.phraseButton.alpha
-        }, completion: nil)
-        UIView.animate(withDuration: 0.5, delay: 0.2, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.letterMCButton.alpha = 1 - self.letterMCButton.alpha
             self.letterMatchButton.alpha = 1 - self.letterMatchButton.alpha
             self.letterMorseButton.alpha = 1 - self.letterMorseButton.alpha
         }, completion: nil)
+        
         wordButton.isUserInteractionEnabled = !wordButton.isUserInteractionEnabled
         phraseButton.isUserInteractionEnabled = !phraseButton.isUserInteractionEnabled
     }
     
     @IBAction func wordButtonPressed(_ sender: UIButton) {
         UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            if self.wordButton.center != self.letterButton.center {
+                self.wordButton.center = self.letterButton.center
+            } else {
+                self.wordButton.center = self.wordButtonCenter
+            }
             self.letterButton.alpha = 1 - self.letterButton.alpha
-        }, completion: nil)
-        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.phraseButton.alpha = 1 - self.phraseButton.alpha
-        }, completion: nil)
-        UIView.animate(withDuration: 0.5, delay: 0.2, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.wordMCButton.alpha = 1 - self.wordMCButton.alpha
             self.wordMatchButton.alpha = 1 - self.wordMatchButton.alpha
             self.wordMorseButton.alpha = 1 - self.wordMorseButton.alpha
         }, completion: nil)
+        
         letterButton.isUserInteractionEnabled = !letterButton.isUserInteractionEnabled
         phraseButton.isUserInteractionEnabled = !phraseButton.isUserInteractionEnabled
     }
     
     @IBAction func phraseButtonPressed(_ sender: UIButton) {
         UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            if self.phraseButton.center != self.letterButton.center {
+                self.phraseButton.center = self.letterButton.center
+            } else {
+                self.phraseButton.center = self.phraseButtonCenter
+            }
             self.letterButton.alpha = 1 - self.letterButton.alpha
-        }, completion: nil)
-        UIView.animate(withDuration: 0.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.wordButton.alpha = 1 - self.wordButton.alpha
-        }, completion: nil)
-        UIView.animate(withDuration: 0.5, delay: 0.2, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.phraseMCButton.alpha = 1 - self.phraseMCButton.alpha
             self.phraseMatchButton.alpha = 1 - self.phraseMatchButton.alpha
             self.phraseMorseButton.alpha = 1 - self.phraseMorseButton.alpha
         }, completion: nil)
+        
         letterButton.isUserInteractionEnabled = !letterButton.isUserInteractionEnabled
         wordButton.isUserInteractionEnabled = !wordButton.isUserInteractionEnabled
     }
