@@ -61,11 +61,13 @@ class ExerciseSelectionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // When the exercise selection view will appear, hide the navigation bar
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
     }
     
+    // When the exercise selection view will disappear, show the navigation bar and animate in with the next view...
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillDisappear(animated)

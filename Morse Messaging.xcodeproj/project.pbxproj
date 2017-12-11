@@ -18,6 +18,7 @@
 		AF47D4621FCF71C5003C242C /* Morse_MessagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4611FCF71C5003C242C /* Morse_MessagingUITests.swift */; };
 		AF47D4861FCF980E003C242C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4851FCF980E003C242C /* KeyboardViewController.swift */; };
 		AF47D48A1FCF980E003C242C /* Morse Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF47D4831FCF980E003C242C /* Morse Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AF6E287F1FDE3FFB00E212BA /* LetterMorseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E287E1FDE3FFB00E212BA /* LetterMorseViewController.swift */; };
 		AFA0901F1FDDCFC600B7959B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0901E1FDDCFC600B7959B /* RoundButton.swift */; };
 		AFB610A61FDB955300389C6F /* LexicontextAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */; };
 		AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */; };
@@ -83,6 +84,7 @@
 		AF47D4831FCF980E003C242C /* Morse Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Morse Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47D4851FCF980E003C242C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		AF47D4871FCF980E003C242C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF6E287E1FDE3FFB00E212BA /* LetterMorseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterMorseViewController.swift; sourceTree = "<group>"; };
 		AFA0901E1FDDCFC600B7959B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		AFB610A21FDB955200389C6F /* libLexicontext.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLexicontext.a; sourceTree = "<group>"; };
 		AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LexicontextAssets.bundle; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				AF47D44D1FCF71C5003C242C /* Info.plist */,
 				AF47D4411FCF71C5003C242C /* AppDelegate.swift */,
 				AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */,
+				AF6E287E1FDE3FFB00E212BA /* LetterMorseViewController.swift */,
 				AF47D4431FCF71C5003C242C /* ViewController.swift */,
 				AF47D4481FCF71C5003C242C /* Assets.xcassets */,
 				AFB610A71FDB95F600389C6F /* Classes */,
@@ -406,6 +409,7 @@
 				AF47D4441FCF71C5003C242C /* ViewController.swift in Sources */,
 				AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */,
 				AF47D4421FCF71C5003C242C /* AppDelegate.swift in Sources */,
+				AF6E287F1FDE3FFB00E212BA /* LetterMorseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
