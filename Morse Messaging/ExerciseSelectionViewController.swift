@@ -123,14 +123,24 @@ class ExerciseSelectionViewController: UIViewController {
     }
 
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
+        if segue.identifier == "LetterSegue" {
+            if let destinationViewController = segue.destination as? ToMorseViewController {
+                destinationViewController.mode = destinationViewController.characters
+            }
+        } else if segue.identifier == "WordSegue" {
+            if let destinationViewController = segue.destination as? ToMorseViewController {
+                destinationViewController.mode = destinationViewController.words
+            }
+        } else if segue.identifier == "PhraseSegue" {
+            if let destinationViewController = segue.destination as? ToMorseViewController {
+                destinationViewController.mode = destinationViewController.phrases
+            }
+        }
         // Pass the selected object to the new view controller.
     }
-    */
 
 }

@@ -18,9 +18,8 @@
 		AF47D4621FCF71C5003C242C /* Morse_MessagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4611FCF71C5003C242C /* Morse_MessagingUITests.swift */; };
 		AF47D4861FCF980E003C242C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4851FCF980E003C242C /* KeyboardViewController.swift */; };
 		AF47D48A1FCF980E003C242C /* Morse Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF47D4831FCF980E003C242C /* Morse Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AF6E287F1FDE3FFB00E212BA /* LetterMorseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E287E1FDE3FFB00E212BA /* LetterMorseViewController.swift */; };
+		AF6E287F1FDE3FFB00E212BA /* ToMorseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E287E1FDE3FFB00E212BA /* ToMorseViewController.swift */; };
 		AFA0901F1FDDCFC600B7959B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0901E1FDDCFC600B7959B /* RoundButton.swift */; };
-		AFB610A61FDB955300389C6F /* LexicontextAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */; };
 		AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */; };
 		AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D31FD8BEFB009DC763 /* WordButton.png */; };
 		AFC027D71FD8BEFB009DC763 /* LetterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D41FD8BEFB009DC763 /* LetterButton.png */; };
@@ -84,12 +83,8 @@
 		AF47D4831FCF980E003C242C /* Morse Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Morse Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF47D4851FCF980E003C242C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		AF47D4871FCF980E003C242C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF6E287E1FDE3FFB00E212BA /* LetterMorseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterMorseViewController.swift; sourceTree = "<group>"; };
+		AF6E287E1FDE3FFB00E212BA /* ToMorseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToMorseViewController.swift; sourceTree = "<group>"; };
 		AFA0901E1FDDCFC600B7959B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		AFB610A21FDB955200389C6F /* libLexicontext.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLexicontext.a; sourceTree = "<group>"; };
-		AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LexicontextAssets.bundle; sourceTree = "<group>"; };
-		AFB610A41FDB955300389C6F /* Lexicontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lexicontext.h; sourceTree = "<group>"; };
-		AFB610AC1FDB9C7600389C6F /* libLexicontext.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLexicontext.a; path = "../../../Downloads/lexicontext-1.2-trial/libLexicontext.a"; sourceTree = "<group>"; };
 		AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSelectionViewController.swift; sourceTree = "<group>"; };
 		AFC027D31FD8BEFB009DC763 /* WordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordButton.png; sourceTree = "<group>"; };
 		AFC027D41FD8BEFB009DC763 /* LetterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LetterButton.png; sourceTree = "<group>"; };
@@ -131,12 +126,11 @@
 		AF47D4351FCF71C4003C242C = {
 			isa = PBXGroup;
 			children = (
+				AF47D4841FCF980E003C242C /* Morse Keyboard */,
 				AF47D4401FCF71C5003C242C /* Morse Messaging */,
 				AF47D4551FCF71C5003C242C /* Morse MessagingTests */,
 				AF47D4601FCF71C5003C242C /* Morse MessagingUITests */,
-				AF47D4841FCF980E003C242C /* Morse Keyboard */,
 				AF47D43F1FCF71C5003C242C /* Products */,
-				AFB610AB1FDB9C7600389C6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,11 +151,10 @@
 				AF47D44D1FCF71C5003C242C /* Info.plist */,
 				AF47D4411FCF71C5003C242C /* AppDelegate.swift */,
 				AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */,
-				AF6E287E1FDE3FFB00E212BA /* LetterMorseViewController.swift */,
+				AF6E287E1FDE3FFB00E212BA /* ToMorseViewController.swift */,
 				AF47D4431FCF71C5003C242C /* ViewController.swift */,
 				AF47D4481FCF71C5003C242C /* Assets.xcassets */,
 				AFB610A71FDB95F600389C6F /* Classes */,
-				AFB610A91FDB962400389C6F /* Frameworks */,
 				AF47D44A1FCF71C5003C242C /* LaunchScreen.storyboard */,
 				AF47D4451FCF71C5003C242C /* Main.storyboard */,
 				AFB610A81FDB961500389C6F /* Resources */,
@@ -199,7 +192,6 @@
 		AFB610A71FDB95F600389C6F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AFB610A41FDB955300389C6F /* Lexicontext.h */,
 				AFA0901E1FDDCFC600B7959B /* RoundButton.swift */,
 			);
 			path = Classes;
@@ -208,7 +200,6 @@
 		AFB610A81FDB961500389C6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AFB610A31FDB955300389C6F /* LexicontextAssets.bundle */,
 				AF17B6C61FDC8ADA00ADBC6B /* Icon.png */,
 				AFC027D41FD8BEFB009DC763 /* LetterButton.png */,
 				AF17B6C71FDC8ADA00ADBC6B /* MorseMessagingOpen.png */,
@@ -216,22 +207,6 @@
 				AFC027D31FD8BEFB009DC763 /* WordButton.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		AFB610A91FDB962400389C6F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AFB610A21FDB955200389C6F /* libLexicontext.a */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		AFB610AB1FDB9C7600389C6F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AFB610AC1FDB9C7600389C6F /* libLexicontext.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +341,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC027D81FD8BEFB009DC763 /* PhraseButton.png in Resources */,
-				AFB610A61FDB955300389C6F /* LexicontextAssets.bundle in Resources */,
 				AF17B6C91FDC8ADB00ADBC6B /* MorseMessagingOpen.png in Resources */,
 				AF47D44C1FCF71C5003C242C /* LaunchScreen.storyboard in Resources */,
 				AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */,
@@ -409,7 +383,7 @@
 				AF47D4441FCF71C5003C242C /* ViewController.swift in Sources */,
 				AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */,
 				AF47D4421FCF71C5003C242C /* AppDelegate.swift in Sources */,
-				AF6E287F1FDE3FFB00E212BA /* LetterMorseViewController.swift in Sources */,
+				AF6E287F1FDE3FFB00E212BA /* ToMorseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
