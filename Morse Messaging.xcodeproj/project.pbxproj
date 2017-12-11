@@ -19,6 +19,12 @@
 		AF47D4861FCF980E003C242C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF47D4851FCF980E003C242C /* KeyboardViewController.swift */; };
 		AF47D48A1FCF980E003C242C /* Morse Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF47D4831FCF980E003C242C /* Morse Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AF6E287F1FDE3FFB00E212BA /* ToMorseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E287E1FDE3FFB00E212BA /* ToMorseViewController.swift */; };
+		AF6E28B51FDE8CE900E212BA /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6E28B41FDE8CE900E212BA /* 1024.png */; };
+		AF6E28B71FDE8D4000E212BA /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6E28B61FDE8D4000E212BA /* 60.png */; };
+		AF6E28B91FDE8DEA00E212BA /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6E28B81FDE8DEA00E212BA /* 58.png */; };
+		AF6E28BB1FDE8E0C00E212BA /* 87.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6E28BA1FDE8E0C00E212BA /* 87.png */; };
+		AF6E28BD1FDE8E4C00E212BA /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6E28BC1FDE8E4C00E212BA /* 180.png */; };
+		AF6E28BF1FDE953500E212BA /* MorseLaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6E28BE1FDE953400E212BA /* MorseLaunchScreen.png */; };
 		AFA0901F1FDDCFC600B7959B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0901E1FDDCFC600B7959B /* RoundButton.swift */; };
 		AFC027CC1FD826E0009DC763 /* ExerciseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */; };
 		AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */ = {isa = PBXBuildFile; fileRef = AFC027D31FD8BEFB009DC763 /* WordButton.png */; };
@@ -84,6 +90,12 @@
 		AF47D4851FCF980E003C242C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		AF47D4871FCF980E003C242C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF6E287E1FDE3FFB00E212BA /* ToMorseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToMorseViewController.swift; sourceTree = "<group>"; };
+		AF6E28B41FDE8CE900E212BA /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
+		AF6E28B61FDE8D4000E212BA /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60.png; sourceTree = "<group>"; };
+		AF6E28B81FDE8DEA00E212BA /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		AF6E28BA1FDE8E0C00E212BA /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87.png; sourceTree = "<group>"; };
+		AF6E28BC1FDE8E4C00E212BA /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180.png; sourceTree = "<group>"; };
+		AF6E28BE1FDE953400E212BA /* MorseLaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MorseLaunchScreen.png; sourceTree = "<group>"; };
 		AFA0901E1FDDCFC600B7959B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		AFC027CB1FD826E0009DC763 /* ExerciseSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSelectionViewController.swift; sourceTree = "<group>"; };
 		AFC027D31FD8BEFB009DC763 /* WordButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordButton.png; sourceTree = "<group>"; };
@@ -200,6 +212,12 @@
 		AFB610A81FDB961500389C6F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AF6E28BE1FDE953400E212BA /* MorseLaunchScreen.png */,
+				AF6E28BC1FDE8E4C00E212BA /* 180.png */,
+				AF6E28B81FDE8DEA00E212BA /* 58.png */,
+				AF6E28B61FDE8D4000E212BA /* 60.png */,
+				AF6E28BA1FDE8E0C00E212BA /* 87.png */,
+				AF6E28B41FDE8CE900E212BA /* 1024.png */,
 				AF17B6C61FDC8ADA00ADBC6B /* Icon.png */,
 				AFC027D41FD8BEFB009DC763 /* LetterButton.png */,
 				AF17B6C71FDC8ADA00ADBC6B /* MorseMessagingOpen.png */,
@@ -340,12 +358,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6E28B51FDE8CE900E212BA /* 1024.png in Resources */,
+				AF6E28BF1FDE953500E212BA /* MorseLaunchScreen.png in Resources */,
 				AFC027D81FD8BEFB009DC763 /* PhraseButton.png in Resources */,
+				AF6E28BD1FDE8E4C00E212BA /* 180.png in Resources */,
 				AF17B6C91FDC8ADB00ADBC6B /* MorseMessagingOpen.png in Resources */,
 				AF47D44C1FCF71C5003C242C /* LaunchScreen.storyboard in Resources */,
 				AFC027D61FD8BEFB009DC763 /* WordButton.png in Resources */,
 				AF17B6C81FDC8ADB00ADBC6B /* Icon.png in Resources */,
 				AF47D4491FCF71C5003C242C /* Assets.xcassets in Resources */,
+				AF6E28B71FDE8D4000E212BA /* 60.png in Resources */,
+				AF6E28BB1FDE8E0C00E212BA /* 87.png in Resources */,
+				AF6E28B91FDE8DEA00E212BA /* 58.png in Resources */,
 				AF47D4471FCF71C5003C242C /* Main.storyboard in Resources */,
 				AFC027D71FD8BEFB009DC763 /* LetterButton.png in Resources */,
 			);

@@ -11,8 +11,8 @@ import UIKit
 class ToMorseViewController: UIViewController {
     
     let characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0"]
-    let words = ["Hello", "World", "SOS", "Morse", "Code", "Dash", "Dot", "ENGR151", "Team", "Hacks", "Cat", "Dog", "Elephant", "Snake", "Dragon"]
-    let phrases = ["Hello World", "Morse Code", "Ann Arbor", "Merry Christmas", "Good Night and Good Luck", "May the Odds Be Ever In Your Favor"]
+    let words = ["Hello", "World", "SOS", "Morse", "Code", "Dash", "Dot", "ENGR151", "Team", "Hacks", "Cat", "Dog", "Elephant", "Snake", "Dragon", "Bisect", "Final", "Bison", "Calculate", "Candid", "Caterpillar", "Class", "Phase", "Comet", "Gift", "Tree", "Star", "Present", "Zebra", "Rose", "Wholesome", "Heliocentric", "Fractal"]
+    let phrases = ["Hello World", "Morse Code", "Ann Arbor", "Merry Christmas", "Good Night and Good Luck", "Now You See Me", "MacBook Pro", "Welcome to the World of Tomorrow"]
     
     var mode: [String]?
     
@@ -135,7 +135,7 @@ class ToMorseViewController: UIViewController {
     func isMorseCharLimit(input: String) -> Bool {
         if (morseInput.text?.count)! == 5 {
             self.error.textColor = UIColor.purple
-            self.error.text = "5 ticks maximum! (Punctuation Excluded)"
+            self.error.text = "5 signals maximum!"
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
                 self.error.text = ""
             }
